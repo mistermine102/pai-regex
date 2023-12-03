@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: small;
+    font-family: "Rubik" "Sans-serif";
+    color: white;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(40, 40, 45);
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 1fr, repeat(4);
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid rgb(80, 80, 80);
+    background-color: rgb(40, 40, 45);
+    border-radius: 5px;
+}
+
+form input:focus {
+    outline: none;
+    border: 1px solid rgb(40, 110, 110);
+}
+
+form button {
+    background-color: rgb(40, 110, 110);
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-control {
+    height: 50px;
+}
+
+.invalid-input-message {
+    color: rgb(238, 102, 102);
+}
+
+form button:hover {
+    background-color: rgb(40, 130, 130);
+}
